@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PeerChat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./CSS/lobby.css"
+    />
+    <link rel='stylesheet' type='text/css' media='screen' href='lobby.css'>
+</head>
+<body>
+    
+    <main id="lobby-container">
+        <div id="form-container">
+            <div id="form__container__header">
+                <p>👋 Create OR Join a Room</p>
+            </div>
+
+            <div id="form__content__wrapper">
+                <form id="join-form">
+                    <input type="text" name="invite_link" required/>
+                    <input type="submit" value="Join Room" />
+                </form>
+                <button type="button" class="btn btn-primary btn-lg btn-block mt-3" onclick="redirectToReactApp()" style="background-color: #845695; border-color: #845695;">Go Back To DrishtiConnect</button>
+            </div>
+        </div>
+    </main>
+    <script>
+      function redirectToReactApp() {
+        window.location.href = "http://localhost:3000"; // Update with your React app's URL
+      }
+    </script>
+
+
+
+</body>
+
+<script>
+    let form = document.getElementById('join-form')
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        let inviteCode = e.target.invite_link.value
+        window.location = `index.html?room=${inviteCode}` 
+    })
+</script>
+
+</html>
