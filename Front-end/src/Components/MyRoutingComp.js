@@ -13,6 +13,8 @@ import Feedback from "./pages/Feedback";
 import Certificate from "./pages/Certificate";
 import { useState } from "react";
 import VolunteerProfile from "./pages/VolunteerProfile";
+import Error from "./pages/Error";
+
 
 const MyRoutingComp = () => {
   const [formValue, setFormValue] = useState("");
@@ -42,6 +44,7 @@ const MyRoutingComp = () => {
               path="certificate"
               element={<Certificate value={formValue} />}
             ></Route>
+             <Route path="error" element={<Error />}></Route>
             <Route
               path="/volunteerProfile"
               element={<VolunteerProfile></VolunteerProfile>}

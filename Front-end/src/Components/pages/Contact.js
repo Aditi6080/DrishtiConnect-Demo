@@ -39,18 +39,31 @@ export const Contact = () => {
 
             <div className="contact-info">
               <h3>Connect with us:</h3>
-              <p>
-                Email:{" "}
+              <p class="mail-container">
+              Email:{" "}
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S84059283%3A1707847734369375&theme=glif">
+                  aditigupta6080@gmail.com
+                </a>
+              </p>
+              <p class="mail-container">
+              Email:{" "}
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S84059283%3A1707847734369375&theme=glif">
+                  netranjali@gmail.com
+                </a>
+              </p>
+              <p class="mail-container">
+              Email:{" "}
                 <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S84059283%3A1707847734369375&theme=glif">
                   shivansh@gmail.com
                 </a>
               </p>
               <p class="mail-container">
+              Email:{" "}
                 <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S84059283%3A1707847734369375&theme=glif">
                   rhutuja@gmail.com
                 </a>
               </p>
-              <p>Phone : +91 9075575845</p>
+              <p class="mail-container">Phone : +91 9075575845</p>
             </div>
           </div>
         </div>

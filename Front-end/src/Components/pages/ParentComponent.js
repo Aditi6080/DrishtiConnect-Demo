@@ -4,17 +4,17 @@ import VolunteerRegister from "./VolunteerRegister";
 import Certificate from "./Certificate";
 
 const ParentComponent = () => {
-  const [volunteerFullName, setVolunteerFullName] = useState("");
+  const [full_Name, setVolunteerFullName] = useState("");
 
-  const handleVolunteerRegister = (fullName) => {
+  const handleVolunteerRegister = (full_Name) => {
     // Update state with the provided fullName
-    setVolunteerFullName(fullName);
+    setVolunteerFullName(full_Name);
   };
 
   return (
     <div>
       <VolunteerRegister onRegister={handleVolunteerRegister} />
-      <Certificate FULL={volunteerFullName} />
+      <Certificate full_Name={full_Name} />
     </div>
   );
 };

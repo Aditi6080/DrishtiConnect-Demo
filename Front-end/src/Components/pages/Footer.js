@@ -41,7 +41,7 @@ const Footer = () => {
                   href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S84059283%3A1707847734369375&theme=glif"
                   class="linkColor"
                 >
-                  rhutujam@gmail.com
+                  aditigupta6080@gmail.com
                 </a>
               </p>
               <p>
